@@ -26,6 +26,7 @@ Lo primero que se hizo fue crear un formulario simple del cual se deberian de pe
 
 </p>
 
+
 ```js
 const [datosPrograma, setDatosPrograma] = useState(
     {
@@ -36,10 +37,14 @@ const [datosPrograma, setDatosPrograma] = useState(
     }
   );
 ```
+
+
 <p align="justify">
 Para guardar la información de los campos del formulario era necesario detectar los cambios que el usuario fuera realizando a estos, por lo cual fue necesario la implementacion de una funcion que se dedicara a
 "escuchar" los cambios en los campos y almacenarlos en el objeto creado. Una vez que se modifican los atributos correspondientes del objeto, estos eran enviados al localstorage para persistirlos en caso de la pestaña fuese cerrada.
 </p>
+
+
 ```js
 const handleCampo = (event) => {
     setDatosPrograma({
@@ -50,10 +55,14 @@ const handleCampo = (event) => {
     console.log(datosPrograma);
   }
 ```
+
+
 <p align="justify">
 Finalmente, una vez que se reabriera la pestaña del navegador o se recargara, lo primero que el programa realiza es obtener los datos del localstorage para almacenarlos en el objeto creado, en caso de que no existan datos en el localstorage
 el objeto simplemente permanecera con los datos del constructor, caso contrario, mostrara los datos recuperados en los campos correspondientes, persistiendo de esta manera los datos de la ejecución anterior.
 </p>
+
+
 ```js
 useEffect(() => {
     setDatosPrograma({
@@ -66,3 +75,7 @@ useEffect(() => {
 ```
 
 ### Conclusion
+
+<p align="justify">
+Se logró comprender la importancia de la persistencia de los datos de sesiones o ejecuciones anteriores de un sistema pues, a pesar de simplicidad del ejemplo desarrollado, esto resulta muy útil para cualquier situación, desde un alumno que realiza un examen en linea y pierde la conexión a internet, a un sistema que realice transferecias bancarias.
+</p>
