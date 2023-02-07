@@ -1,0 +1,73 @@
+#root {
+  margin: 0px;
+  padding: 0%;
+  text-align: center;
+}
+
+.App {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border-radius: 0 2% 2% 0;
+  margin: 0px;
+  padding: 0px;
+  background-image: url(./../public/5410312959_417effb834_b.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px 1080px 4px rgba(20, 93, 116, 0.61);
+  place-items: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+.etiqueta {
+  top: 0px;
+  left: 0px;
+  margin-right: 5%;
+  width: 45%;
+  text-align: justify;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+
+.campo {
+  width: 50%;
+  font-size: 1.05rem;
+  font-weight: medium;
+  background-color: rgb(236, 234, 232);
+  border-radius: 6px;
+  padding: 0.3rem;
+  outline: none;
+  border: 1px solid #61b1c5;
+  color: #252f31;
+}
+
+
+.contenedor {
+  display: flex;
+  margin-bottom: 8%;
+  padding-inline: 6%;
+}
+
+
+.btn {
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.3rem;
+  text-align: center;
+  margin-top: 10%;
+}
+
+#btnVaciar {
+  margin-right: 5%;
+  background-color: #c96e1e;
+  border-color: #cf7c44;
+}
